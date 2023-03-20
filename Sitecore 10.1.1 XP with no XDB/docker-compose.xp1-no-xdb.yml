@@ -95,14 +95,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
-      xdbcollection:
-        condition: service_started
-      xdbautomation:
-        condition: service_started
-      xdbautomationrpt:
-        condition: service_started
-      xdbrefdata:
-        condition: service_started
     environment:
       Sitecore_AppSettings_instanceNameMode:define: default
       Sitecore_ConnectionStrings_Security: Data Source=mssql;Initial Catalog=Sitecore.Core;User ID=sa;Password=${SQL_SA_PASSWORD}
